@@ -9,7 +9,6 @@ import java.util.List;
 @CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/playlists")
-@CrossOrigin(origins = "http://localhost:4200")
 public class PlaylistController {
 
     private final PlaylistService service;

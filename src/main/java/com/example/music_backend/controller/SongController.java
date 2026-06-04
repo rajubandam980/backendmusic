@@ -10,7 +10,6 @@ import java.util.List;
 @CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/songs")
-@CrossOrigin(origins = "http://localhost:4200")
 public class SongController {
 
     private final SongService service;
