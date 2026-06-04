@@ -1,0 +1,12 @@
+package com.example.music_backend.repository;
+
+import com.example.music_backend.entity.Song;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface SongRepository
+        extends JpaRepository<Song, Long> {
+
+    List<Song> findByPlaylistId(Long playlistId);
+}
